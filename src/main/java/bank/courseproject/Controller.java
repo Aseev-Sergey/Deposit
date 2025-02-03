@@ -12,9 +12,9 @@ public class Controller {
 
     @FXML
     protected void onActionAddDeposit() {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("AddWindow.fxml"));
+        /*FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("AddWindow.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1000, 400);
         stage.setScene(scene);
-        stage.show();
+        stage.show();*/
     }
 }
