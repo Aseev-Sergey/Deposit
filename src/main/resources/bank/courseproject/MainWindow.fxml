@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="976.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+        <columns>
+          <TableColumn fx:id="ColumnDepositor" editable="false" prefWidth="256.8000068664551" text="ФИО вкладчика" />
+            <TableColumn fx:id="ColumnBankName" editable="false" minWidth="0.0" prefWidth="339.99998474121094" text="Имя банка" />
+          <TableColumn fx:id="ColumnTypeOfDeposit" editable="false" prefWidth="147.20001220703125" text="Тип вклада" />
+            <TableColumn fx:id="ColumnBalance" editable="false" prefWidth="72.800048828125" text="Сумма" />
+            <TableColumn fx:id="ColumnTypeOfValuta" editable="false" prefWidth="97.60003662109375" text="Тип валюты" />
+        </columns>
+      </TableView>
+      <HBox layoutX="14.0" layoutY="358.0" prefHeight="28.0" prefWidth="576.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0">
+         <children>
+            <Button fx:id="buttonAddDeposit" mnemonicParsing="false" onAction="#onActionAddDeposit" prefHeight="35.0" prefWidth="90.0" text="Добавить">
+               <HBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </Button>
+            <Button layoutX="11.0" layoutY="11.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="90.0" text="Пополнить" />
+            <Button layoutX="11.0" layoutY="11.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="90.0" text="Снять" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
